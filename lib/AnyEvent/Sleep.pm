@@ -1,4 +1,4 @@
-# ABSTRACT: Blocking sleep for AnyEvent that doesn't block event handlers
+# ABSTRACT: Sleep for n seconds while events still fire
 package AnyEvent::Sleep;
 use strict;
 use warnings;
