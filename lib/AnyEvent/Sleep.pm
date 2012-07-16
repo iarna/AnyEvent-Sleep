@@ -38,7 +38,7 @@ sub sleep_until($) {
     my $cv = AE::cv;
     my $w=AE::timer( $for, 0, sub { $cv->send } );
     $cv->recv;
-    uncef $cv;
+    undef $cv;
     return;
 }
 
